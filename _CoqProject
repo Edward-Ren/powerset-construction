@@ -1,0 +1,9 @@
+-Q formalization PowersetProject
+-Q examples PowersetExamples
+
+formalization/AutomataBase.v
+formalization/AutomataSemantics.v
+formalization/PowersetConstruction.v
+formalization/Finiteness.v
+formalization/EpsilonClosure.v
+examples/Examples.v
