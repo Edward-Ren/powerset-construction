@@ -5,35 +5,31 @@ NFAs, acceptance semantics, the powerset construction, and a correctness
 proof showing that the constructed DFA recognizes the same language as the
 original NFA.
 
-The project also contains an explicit finiteness argument for the state
-space of the constructed DFA. It only uses the Coq standard library and does
-not rely on advanced libraries such as MathComp.
-
 The main results are:
 
-\- words and languages
+- words and languages
   (Definitions word and lang in AutomataBase.v);
 
-\- deterministic and nondeterministic finite automata
+- deterministic and nondeterministic finite automata
   (Records DFA and NFA in AutomataBase.v);
 
-\- acceptance semantics for DFAs and NFAs
+- acceptance semantics for DFAs and NFAs
   (Definitions dfa_accept and nfa_accept in AutomataSemantics.v);
 
-\- epsilon-closure for NFAs
+- epsilon-closure for NFAs
   (Definition epsilon_closure in EpsilonClosure.v);
 
-\- the powerset construction from NFAs to DFAs
+- the powerset construction from NFAs to DFAs
   (Definition nfa_to_dfa in PowersetConstruction.v);
 
-\- correctness of the powerset construction
+- correctness of the powerset construction
   (Theorem nfa_to_dfa_correct in PowersetConstruction.v);
 
-\- finiteness of the constructed DFA state space
+- finiteness of the constructed DFA state space
   (Record FiniteType, Lemma all_powerset_states_cover, and Theorem
   powerset_construction_preserves_finiteness in Finiteness.v).
 
-#
+
 This repository is still beings updated.
 
 Please let me know if you find a mistake or have suggestions for improvement.
