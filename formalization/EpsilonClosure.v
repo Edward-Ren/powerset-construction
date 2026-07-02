@@ -1,6 +1,10 @@
 (************************************************************)
 (* Epsilon-NFAs, epsilon-closure and determinization.      *)
 (************************************************************)
+From Coq Require Import Lists.List.
+From Coq Require Import Lists.ListSet.
+From Coq Require Import Bool.Bool.
+Import ListNotations.
 
 From PowersetProject Require Import AutomataBase.
 From PowersetProject Require Import AutomataSemantics.
