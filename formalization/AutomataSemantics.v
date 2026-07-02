@@ -1,9 +1,10 @@
 (************************************************************)
 (* Run and acceptance semantics for DFAs and NFAs.          *)
 (************************************************************)
-
+From Coq Require Import Lists.List.
+From Coq Require Import Lists.ListSet.
 From PowersetProject Require Import AutomataBase.
-
+Import ListNotations.
 (************************************************************)
 (* DFA semantics                                            *)
 (************************************************************)
